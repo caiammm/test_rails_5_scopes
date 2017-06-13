@@ -1,12 +1,12 @@
-`
-rails db:create
+```
+  rails db:create
 
-rails db:migrate
+  rails db:migrate
 
-rails db:seed
+  rails db:seed
 
-rails c
-`
+  rails c
+```
 
 
 call in console Course.scope_multiple_things

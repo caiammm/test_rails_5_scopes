@@ -6,10 +6,9 @@
   rails db:seed
 
   rails c
+
+  Course.scope_multiple_things
 ```
-
-
-call in console Course.scope_multiple_things
 
 it works in our five year application with Rails 4.1.14.1
 

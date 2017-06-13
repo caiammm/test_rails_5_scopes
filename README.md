@@ -1,24 +1,14 @@
-# README
+rails db:create
+rails db:migrate
+rails db:seed
+rails c
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+call in console Course.scope_multiple_things
 
-Things you may want to cover:
+it works in our five year application with Rails 4.1.14.1
 
-* Ruby version
+we are upgrading to Rails 5.0.3 but we are having some issues to fix before it goes live. This is one of them.
 
-* System dependencies
+Our code is far way complex. So I tryed to replicate our aggregation scopes that was already called in another scopes.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The problem seems to be using 2 times a scope that joins another model and merge a scope from it.
